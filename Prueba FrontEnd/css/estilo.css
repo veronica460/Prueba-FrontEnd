@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    animation: moverIzquierda 1s ease-in;
+    
+}
+.icono{
+    display: block;
+    animation: moverIzquierda 1s ease-in;
+    z-index: 1000;
+}
+header{
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    animation: arriba 1s ease-in;
+}
+.textos{
+    width: 50%;
+    color: #fff;
+}
+.textos h1{
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+}
+.textos h2{
+    font-size: 20px;
+    animation: moverIzquierda 1s ease-in;
+}
+.textos a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    animation: arriba 1s ease-in;
+}
+
+
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@keyframes moverIzquierda {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moverDerecha {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes arriba {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.enlace{
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    flex-direction: column;
+    background: #000;
+    transition: all 1s ease;
+    background: #F7971E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.one{
+    clip-path: circle(0% at 100% 0);
+    
+}
+
+.two{
+    clip-path: circle(140.7% at 100% 0);
+}
+
+/*Slide products*/
+
+
+.mySlides {
+    display: none;
+}
+img {
+    width: 600px;
+    height: 200px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+/*About services*/
+.about-services{
+    background: #fff;
+    padding-bottom: 30px;
+}
+.content{
+    padding: 40px;
+}
+.service-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-ind{
+    width: 28%;
+    text-align: center;
+}
+.service-ind img{
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-ind h3{
+    margin: 10px 0;
+}
+.service-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Employees*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: #fff;
+    display: flex;
+    width: 90%;
+    height: 270px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+.cards .card iframe{
+    width: 500px;
+    height: 240px;
+    
+    border: 1px solid #fff;
+    border-radius: 5%;
+    display: block;
+}
+.cards .card >.contenido-texto-card{
+    width: 60%;
+    color: #fff;
+
+}
+.cards .card >.contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+
+}
+
+/*About products*/
+.about-products{
+    padding: 20px;
+   margin: 20px;
+}
+.about-products h2{
+    text-align: center;
+    padding: 30px;
+}
+ 
+ 
+/*.about-services{
+    background: #fff;
+    padding-bottom: 30px;
+}
+.content{
+    padding: 40px;
+}
+.service-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-ind{
+    width: 28%;
+    text-align: center;
+}
+.service-ind img{
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    
+}
+.service-ind h3{
+    margin: 10px 0;
+}
+.service-ind p{
+    font-weight: 300;
+    text-align: justify;
+}*/
+
+/*Footer*/
+footer{
+    background: #ccc;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #000;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.comtent-foo p{
+    color: #ccc;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
